@@ -1,0 +1,22 @@
+{
+  "games": [
+    {
+      "id": "risk",
+      "name": "Risk",
+      "minPlayers": 2,
+      "maxPlayers": 6,
+      "supportsTeams": false,
+      "setupFlowId": "classic",
+      "turnFlowId": "classic"
+    },
+    {
+      "id": "clue",
+      "name": "Clue",
+      "minPlayers": 3,
+      "maxPlayers": 6,
+      "supportsTeams": false,
+      "setupFlowId": "classic",
+      "turnFlowId": "classic"
+    }
+  ]
+}
