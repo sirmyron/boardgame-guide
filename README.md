@@ -1,7 +1,12 @@
 # Boardgame Guide
 
-This is an Expo + React Native starter that renders the game flows on web or
-native.
+## Purpose
+
+Boardgame Guide is a cross-platform (mobile web + Expo React Native) companion
+app that helps players set up and play board games. The app will let users pick
+from multiple games, select the number of players, and then walk through setup
+steps and turn-by-turn guidance. Risk is the first fully modeled game, with more
+(e.g., Clue) planned next.
 
 ## Quick start
 
