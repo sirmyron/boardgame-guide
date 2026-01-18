@@ -1,0 +1,77 @@
+{
+  "id": "clue",
+  "name": "Clue",
+  "minPlayers": 3,
+  "maxPlayers": 6,
+  "playerCounts": [3, 4, 5, 6],
+  "setupFlows": {
+    "classic": {
+      "title": "Classic setup",
+      "steps": [
+        {
+          "id": "select-characters",
+          "title": "Select characters",
+          "text": "Each player chooses a character and takes the matching token, color, and cards.",
+          "ui": "instruction"
+        },
+        {
+          "id": "prepare-solution",
+          "title": "Create the case file",
+          "text": "Shuffle suspects, weapons, and rooms separately; place one from each into the case file envelope without revealing.",
+          "ui": "instruction"
+        },
+        {
+          "id": "deal-remaining",
+          "title": "Deal remaining cards",
+          "text": "Shuffle the remaining cards together and deal them evenly to all players.",
+          "ui": "instruction"
+        }
+      ]
+    }
+  },
+  "turnFlows": {
+    "classic": {
+      "title": "Classic turn",
+      "phases": [
+        {
+          "id": "move",
+          "title": "Move",
+          "steps": [
+            {
+              "id": "roll-move",
+              "text": "Roll the die and move your token that many spaces, or use a secret passage if available.",
+              "ui": "instruction"
+            }
+          ]
+        },
+        {
+          "id": "suggest",
+          "title": "Suggest",
+          "steps": [
+            {
+              "id": "make-suggestion",
+              "text": "If you are in a room, make a suggestion naming a suspect, weapon, and room.",
+              "ui": "instruction"
+            },
+            {
+              "id": "refute",
+              "text": "The next player to your left who can disprove must show you one matching card in secret.",
+              "ui": "instruction"
+            }
+          ]
+        },
+        {
+          "id": "accuse",
+          "title": "Accuse (optional)",
+          "steps": [
+            {
+              "id": "final-accusation",
+              "text": "Make an accusation at any time on your turn. If correct, you win; if wrong, you are out.",
+              "ui": "instruction"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

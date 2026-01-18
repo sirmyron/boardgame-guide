@@ -1,0 +1,92 @@
+{
+  "id": "risk",
+  "name": "Risk",
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "playerCounts": [2, 3, 4, 5, 6],
+  "setupFlows": {
+    "classic": {
+      "title": "Classic setup",
+      "steps": [
+        {
+          "id": "choose-colors",
+          "title": "Choose colors and armies",
+          "text": "Each player selects a color and takes the matching armies.",
+          "ui": "instruction"
+        },
+        {
+          "id": "deal-territories",
+          "title": "Deal territory cards",
+          "text": "Shuffle all territory cards and deal them evenly. Each player places 1 army on each territory they receive.",
+          "ui": "instruction"
+        },
+        {
+          "id": "place-remaining",
+          "title": "Place remaining armies",
+          "text": "After all territories are claimed, players take turns placing their remaining armies on any owned territories.",
+          "ui": "instruction"
+        }
+      ]
+    }
+  },
+  "turnFlows": {
+    "classic": {
+      "title": "Classic turn",
+      "phases": [
+        {
+          "id": "reinforcement",
+          "title": "Reinforcement",
+          "steps": [
+            {
+              "id": "calculate-base",
+              "text": "Gain armies equal to territories owned ÷ 3 (minimum 3).",
+              "ui": "instruction"
+            },
+            {
+              "id": "add-continents",
+              "text": "Add continent bonuses for any continents you fully control.",
+              "ui": "instruction"
+            },
+            {
+              "id": "turn-in-cards",
+              "text": "Optionally trade in card sets for bonus armies. If you have 5+ cards you must trade a set.",
+              "ui": "instruction"
+            }
+          ]
+        },
+        {
+          "id": "attack",
+          "title": "Attack",
+          "steps": [
+            {
+              "id": "declare-attack",
+              "text": "Attack adjacent enemy territories with 2+ armies, rolling dice to resolve battles.",
+              "ui": "instruction"
+            },
+            {
+              "id": "capture-move",
+              "text": "When you conquer a territory, move at least the number of dice you rolled into it.",
+              "ui": "instruction"
+            },
+            {
+              "id": "earn-card",
+              "text": "If you captured at least one territory this turn, take one Risk card at end of attack phase.",
+              "ui": "instruction"
+            }
+          ]
+        },
+        {
+          "id": "fortify",
+          "title": "Fortify",
+          "steps": [
+            {
+              "id": "move-armies",
+              "text": "Move armies once between two connected territories you own, leaving at least 1 behind.",
+              "ui": "instruction"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

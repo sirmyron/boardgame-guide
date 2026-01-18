@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Boardgame Guide",
+    "slug": "boardgame-guide",
+    "version": "0.1.0",
+    "platforms": ["ios", "android", "web"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic"
+  }
+}
